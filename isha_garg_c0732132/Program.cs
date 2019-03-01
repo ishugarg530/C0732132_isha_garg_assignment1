@@ -22,8 +22,8 @@ namespace isha_garg_c0732132
         public JournalEntry(string note, int dist)
         {
             villageName = note; distanceTraveled = dist;
-            // TO DO : What additional code must you add to enable the Calculate Distance algorithm to 
-            // produce an accurate result?
+            HowFarToGetBack = distanceTraveled;
+
         }
         public int HowFarToGetBack = 0;
         private string villageName;
