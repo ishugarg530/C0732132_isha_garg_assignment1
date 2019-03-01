@@ -54,13 +54,14 @@ namespace isha_garg_c0732132
 
     class CountrySide
     {
+
         static void Main()
         {
             CountrySide a = new CountrySide();
             a.Run();
         }
 
-
+        // Create the LinkedList to reflect the Map in the PowerPoint Instructions
         Village Maeland;
         Village Helmholtz;
         Village Alst;
@@ -71,25 +72,31 @@ namespace isha_garg_c0732132
 
         public void TraverseVillages(Village CurrentVillage)
         {
-            if (Hugi.FoundAstrilde) return;
-
-            // Here Hugi records his travels, as any Norse Hero will do:
-            // TO DO : How does Hugi journal his visit to each village?
-
-            Console.WriteLine("I am in {0}", CurrentVillage.VillageName);
-
-            if (CurrentVillage.isAstrildgeHere)
+            try
             {
-                Console.WriteLine("I found Dear Astrildge in {0}", CurrentVillage.VillageName);
-                Console.WriteLine("**** FEELING HAPPY!!! ******");
-                Console.WriteLine("Astrilde, I walked {0} vika to find you. Will you marry me?", Hugi.CalculateDistanceWalked());
-                Hugi.FoundAstrilde = true;
+                if (Hugi.FoundAstrilde) return;
+
+                // Here Hugi records his travels, as any Norse Hero will do:
+                Hugi.HugiJournal.Add(new JournalEntry(CurrentVillage.VillageName, CurrentVillage.distanceFromPreviousVillage));
+
+                Console.WriteLine("I am in {0}", CurrentVillage.VillageName);
+
+                if (CurrentVillage.isAstrildgeHere)
+                {
+                    Console.WriteLine("I found Dear Astrildge in {0}", CurrentVillage.VillageName);
+                    Console.WriteLine("**** FEELING HAPPY!!! ******");
+                    Console.WriteLine("Astrilde, I walked {0} vika to find you. Will you marry me?", Hugi.CalculateDistanceWalked());
+                    Hugi.FoundAstrilde = true;
+                }
+
+                // TO DO: Complete this section to make the Recursion work           
+                TraverseVillages(CurrentVillage.west);
+                TraverseVillages(CurrentVillage.east);
             }
 
-            // TO DO: Complete this section to make the Recursion work           
-
-
+            catch (NullReferenceException) { }
         }
+
 
         public void Run()
         {
