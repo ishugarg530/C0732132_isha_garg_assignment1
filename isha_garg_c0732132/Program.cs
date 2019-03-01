@@ -100,17 +100,29 @@ namespace isha_garg_c0732132
 
         public void Run()
         {
+            //tries eevery loc
             Alst = new Village("Alst", false);
             Schvenig = new Village("Schvenig", false);
             Wessig = new Village("Wessig", false);
             // TO DO: Complete this section
+            Uster = new Village("Uster", true);
+            Badden = new Village("badden", false);
+            Maeland = new Village("Maeland", false);
+            Helmholtz = new Village("Helmholtz", false);
 
             Alst.VillageSetup(0, Schvenig, Wessig);
             Schvenig.VillageSetup(14, Maeland, Helmholtz);
             // TO DO: Complete this section
+            Wessig.VillageSetup(19, Uster, Badden);
+            Uster.VillageSetup(28, null, null);
+            Badden.VillageSetup(11, null, null);
+            Maeland.VillageSetup(9, null, null);
+            Helmholtz.VillageSetup(28, null, null);
 
-
+            this.TraverseVillages(Alst);
+            this.Announcement();
         }
+
 
         public void Announcement()
         {
