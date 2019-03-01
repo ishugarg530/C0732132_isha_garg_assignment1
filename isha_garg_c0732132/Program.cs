@@ -37,7 +37,7 @@ namespace isha_garg_c0732132
         private static JournalEntry je;
         public static bool FoundAstrilde = false;
 
-        // TO DO
+        public static List<JournalEntry> HugiJournal = new List<JournalEntry>();
 
         public static int CalculateDistanceWalked()
         {
