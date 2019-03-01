@@ -130,7 +130,7 @@ namespace isha_garg_c0732132
             {
                 // Create an instance of StreamReader to read from a file.
                 // The using statement also closes the StreamReader.
-                using (StreamReader sr = new StreamReader("c:/area51/annoucement.txt"))
+                using (StreamReader sr = new StreamReader("‪C:/Users/Monty/Documents/Visual Studio 2017/c0732132/annoucement.txt"))
                 {
                     string line;
 
