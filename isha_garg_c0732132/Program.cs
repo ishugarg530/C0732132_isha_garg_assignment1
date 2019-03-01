@@ -54,8 +54,13 @@ namespace isha_garg_c0732132
 
     class CountrySide
     {
+        static void Main()
+        {
+            CountrySide a = new CountrySide();
+            a.Run();
+        }
 
-        // Create the LinkedList to reflect the Map in the PowerPoint Instructions
+
         Village Maeland;
         Village Helmholtz;
         Village Alst;
