@@ -10,6 +10,7 @@ namespace isha_garg_c0732132
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(" hello ");
         }
     }
 }
