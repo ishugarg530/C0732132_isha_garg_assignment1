@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "isha_garg_c0732132", "isha_garg_c0732132\isha_garg_c0732132.csproj", "{9ECFA0B2-7731-4175-A1A6-54F6C4CBC9DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9ECFA0B2-7731-4175-A1A6-54F6C4CBC9DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ECFA0B2-7731-4175-A1A6-54F6C4CBC9DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ECFA0B2-7731-4175-A1A6-54F6C4CBC9DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ECFA0B2-7731-4175-A1A6-54F6C4CBC9DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2EB2E36-738A-4BD7-A30F-816D246A2891}
+	EndGlobalSection
+EndGlobal
